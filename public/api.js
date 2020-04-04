@@ -10,6 +10,7 @@ const API = {
 
     return json[json.length - 1];
   },
+  // get route
   async addExercise(data) {
     const id = location.search.split("=")[1];
 
@@ -23,6 +24,7 @@ const API = {
 
     return json;
   },
+  // post route 
   async createWorkout(data = {}) {
     const res = await fetch("/api/workouts", {
       method: "POST",
